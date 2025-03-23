@@ -1,0 +1,60 @@
+.card_container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 1rem 0;
+  overflow: auto;
+  justify-content: center;
+  border-radius: 1rem;
+  border: 0.0625rem solid rgba(239, 231, 210, 0.1490196078);
+}
+
+.card_title {
+  text-align: center;
+  font-family: 'Satocho';
+  color: #f4dda3;
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  line-height: 120%;
+  gap: 1rem;
+}
+
+.card_title::before,
+.card_title::after {
+  content: '';
+  height: 1.625rem;
+  background: url('../../../public/img/icons/decor-1.svg') center/100% no-repeat;
+}
+
+.card_title:before {
+  transform: rotate(-180deg);
+}
+
+.card_title::before,
+.card_title::after {
+  width: 2.8125rem;
+}
+
+.card_description {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.card_description_text {
+  white-space: nowrap;
+  font-weight: 300;
+  line-height: 180%;
+}
+
+.card_description_value {
+  font-weight: 300;
+  line-height: 180%;
+  text-align: right;
+}

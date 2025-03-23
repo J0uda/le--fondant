@@ -1,0 +1,64 @@
+.hero_images_content {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+  min-height: calc(100vh - 2rem);
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero_images_content::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0)),
+    to(#000)
+  );
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), #000 100%);
+}
+.hero_images_title {
+  position: relative;
+  z-index: 4;
+  letter-spacing: 0.0178571429em;
+  text-transform: uppercase;
+  color: #efe7d2;
+  font-family: 'Satosha';
+  font-weight: 400;
+}
+
+.contacts__background_ibg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.contacts__container {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
